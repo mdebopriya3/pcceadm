@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Attendance</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Student Attendance</h1>
+    <div id="form-container">
+      <label for="classdate">Class Date:</label>
+      <input type="date" id="classdate" name="classdate"><br><br>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      
+      <label for="sex">Sex:</label>
+      <input type="radio" id="male" name="sex" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="sex" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="sex" value="Other">
+      <label for="other">Other</label><br><br>
+      
+      <h3>Class Attendance:</h3>
+      <label for="english">English:</label>
+      <input type="checkbox" id="english" name="attendance" value="english">
+      <label for="math">Math:</label>
+      <input type="checkbox" id="math" name="attendance" value="math">
+      <label for="gk1">GK Offline 1:</label>
+      <input type="checkbox" id="gk1" name="attendance" value="gk1">
+      <label for="gk2">GK Offline 2:</label>
+      <input type="checkbox" id="gk2" name="attendance" value="gk2">
+      <label for="gk3">GK Online 1:</label>
+      <input type="checkbox" id="gk3" name="attendance" value="gk3">
+      <label for="gk4">GK Online 2:</label>
+      <input type="checkbox" id="gk4" name="attendance" value="gk4"><br><br>
+      
+      <button onclick="createTable()">Submit</button>
+    </div>
+    
+    <div id="table-container"></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
