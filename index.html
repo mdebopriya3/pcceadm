@@ -12,7 +12,45 @@
       
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br><br>
+
+<!--
+      <div class="form-group">
+        <label for="classdate">Date of the class:</label>
+        <input type="date" id="classdate" name="classdate" required>
+      </div>
+
+    
       
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+-->
+
+      <div class="form-group">
+        <label for="sex">Sex:</label>
+        <div>
+          <label><input type="radio" name="sex" value="male" required> Male</label>
+          <label><input type="radio" name="sex" value="female" required> Female</label>
+          <label><input type="radio" name="sex" value="other" required> Other</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="attendance">Attendance:</label>
+        <label><input type="checkbox" name="attendance" value="eng" required> English</label>
+        <label><input type="checkbox" name="attendance" value="maths" required> Maths</label>
+        <label><input type="checkbox" name="attendance" value="gkoff1" required> GK Offline 1</label>
+        <label><input type="checkbox" name="attendance" value="gkoff2" required> GK Offline 2</label>
+        <label><input type="checkbox" name="attendance" value="gkon1" required> GK Online 1</label>
+        <label><input type="checkbox" name="attendance" value="gkon2" required> GK Online 2</label>
+        <label><input type="checkbox" name="attendance" value="gi" required> Reasoning</label>
+      </div>
+      
+      
+      <!--
+
       <label for="sex">Sex:</label>
       <input type="radio" id="male" name="sex" value="Male">
       <label for="male">Male</label>
@@ -20,6 +58,8 @@
       <label for="female">Female</label>
       <input type="radio" id="other" name="sex" value="Other">
       <label for="other">Other</label><br><br>
+      
+     
       
       <h3>Class Attendance:</h3>
       <label for="english">English:</label>
@@ -34,6 +74,8 @@
       <input type="checkbox" id="gk3" name="attendance" value="gk3">
       <label for="gk4">GK Online 2:</label>
       <input type="checkbox" id="gk4" name="attendance" value="gk4"><br><br>
+
+      -->
       
       <button onclick="createTable()">Submit</button>
     </div>
